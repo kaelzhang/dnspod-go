@@ -1,0 +1,77 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+**/no-track.go
+
+# Test binary, build with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+/run
+/logs
+/.nuxt
+/.schedule-var
+/cert
+/.dockerignore.default
+/Dockerfile.default
+
+# Numerous always-ignore extensions
+*.bak
+*.patch
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+*.sass-cache
+*.lock
+*.rdb
+*.db
+nohup.out
+.nyc_output
+coverage.lcov
+*.tgz
+*.tar.gz
+
+# OS or Editor folders
+.DS_Store
+._*
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+thumbs.db
+
+# Folders to ignore
+.hg
+.svn
+.CVS
+.idea
+node_modules
+old/
+*-old/
+*-notrack/
+no-track/
+build/
+combo/
+reference/
+jscoverage_lib/
+temp/
+tmp/
+
+# codecov.io
+coverage/

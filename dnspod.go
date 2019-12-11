@@ -27,6 +27,7 @@ const (
 
 // dnspod API docs: https://www.dnspod.cn/docs/info.html
 
+// CommonParams common options for dnspod-go
 type CommonParams struct {
 	LoginToken   string
 	Format       string

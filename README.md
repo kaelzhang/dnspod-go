@@ -7,7 +7,7 @@ Borrowed from : [dnsimple](https://github.com/weppos/dnsimple-go/dnsimple)
 ## Installation
 
 ```
-$ go get github.com/decker502/dnspod-go
+$ go get github.com/kaelzhang/dnspod-go
 ```
 
 
@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/decker502/dnspod-go"
+	"github.com/kaelzhang/dnspod-go"
 )
 
 func main() {

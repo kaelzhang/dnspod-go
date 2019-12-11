@@ -15,21 +15,23 @@ type DomainsService struct {
 	client *Client
 }
 
+// DomainInfo represents the info field of dnspod response
 type DomainInfo struct {
-	DomainTotal   int    `json:"domain_total,omitempty"`
-	AllTotal      int    `json:"all_total,omitempty"`
-	MineTotal     int    `json:"mine_total,omitempty"`
-	ShareTotal    string `json:"share_total,omitempty"`
-	VipTotal      int    `json:"vip_total,omitempty"`
-	IsMarkTotal   int    `json:"ismark_total,omitempty"`
-	PauseTotal    int    `json:"pause_total,omitempty"`
-	ErrorTotal    int    `json:"error_total,omitempty"`
-	LockTotal     int    `json:"lock_total,omitempty"`
-	SpamTotal     int    `json:"spam_total,omitempty"`
-	VipExpire     int    `json:"vip_expire,omitempty"`
-	ShareOutTotal int    `json:"share_out_total,omitempty"`
+	DomainTotal   int    					`json:"domain_total,omitempty"`
+	AllTotal      int    					`json:"all_total,omitempty"`
+	MineTotal     json.Number    	`json:"mine_total,omitempty"`
+	ShareTotal    json.Number 	 	`json:"share_total,omitempty"`
+	VipTotal      json.Number    	`json:"vip_total,omitempty"`
+	IsMarkTotal   json.Number    	`json:"ismark_total,omitempty"`
+	PauseTotal    json.Number    	`json:"pause_total,omitempty"`
+	ErrorTotal    json.Number    	`json:"error_total,omitempty"`
+	LockTotal     json.Number    	`json:"lock_total,omitempty"`
+	SpamTotal     json.Number    	`json:"spam_total,omitempty"`
+	VipExpire     int    					`json:"vip_expire,omitempty"`
+	ShareOutTotal int    					`json:"share_out_total,omitempty"`
 }
 
+// Domain domain
 type Domain struct {
 	ID               json.Number `json:"id,omitempty"`
 	Name             string      `json:"name,omitempty"`
@@ -38,7 +40,7 @@ type Domain struct {
 	GradeTitle       string      `json:"grade_title,omitempty"`
 	Status           string      `json:"status,omitempty"`
 	ExtStatus        string      `json:"ext_status,omitempty"`
-	Records          string      `json:"records,omitempty"`
+	Records          json.Number `json:"records,omitempty"`
 	GroupID          json.Number `json:"group_id,omitempty"`
 	IsMark           string      `json:"is_mark,omitempty"`
 	Remark           string      `json:"remark,omitempty"`
@@ -47,7 +49,7 @@ type Domain struct {
 	UserID           string      `json:"user_id,omitempty"`
 	CreatedOn        string      `json:"created_on,omitempty"`
 	UpdatedOn        string      `json:"updated_on,omitempty"`
-	TTL              string      `json:"ttl,omitempty"`
+	TTL              json.Number `json:"ttl,omitempty"`
 	CNameSpeedUp     string      `json:"cname_speedup,omitempty"`
 	Owner            string      `json:"owner,omitempty"`
 	AuthToAnquanBao  bool        `json:"auth_to_anquanbao,omitempty"`
