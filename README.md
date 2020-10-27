@@ -1,3 +1,9 @@
+This repo is archived and will not be maintained.
+
+Please check https://github.com/nrdcg/dnspod-go instead.
+
+****
+
 # dnspod-go
 
 A Go client for the [DNSPod API](https://www.dnspod.cn/docs/index.html).
